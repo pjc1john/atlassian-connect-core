@@ -1,65 +1,65 @@
 {
-    "name": "brezzhnev/atlassian-connect-core",
-    "type": "library",
-    "description": "Atlassian Connect Framework to build add-on for the JIRA and Confluence",
-    "keywords": [
-        "laravel",
-        "brezzhnev",
-        "atlassian",
-        "jira",
-        "confluence",
-        "add-on"
-    ],
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/brezzhnev/atlassian-connect-core/issues",
-        "source": "https://github.com/brezzhnev/atlassian-connect-core"
+  "name": "brezzhnev/atlassian-connect-core",
+  "type": "library",
+  "description": "Atlassian Connect Framework to build add-on for the JIRA and Confluence",
+  "keywords": [
+    "laravel",
+    "brezzhnev",
+    "atlassian",
+    "jira",
+    "confluence",
+    "add-on"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/brezzhnev/atlassian-connect-core/issues",
+    "source": "https://github.com/brezzhnev/atlassian-connect-core"
+  },
+  "authors": [
+    {
+      "name": "Artem Brezhnev",
+      "email": "brezzhnev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "firebase/php-jwt": "^5.0",
+    "guzzlehttp/guzzle": "^7.4",
+    "illuminate/support": "^6.0|^7.0|^8.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.2",
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.4|^9.0",
+    "squizlabs/php_codesniffer": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "AtlassianConnectCore\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AtlassianConnectCore\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
     },
-    "authors": [
-        {
-            "name": "Artem Brezhnev",
-            "email": "brezzhnev@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.2",
-        "firebase/php-jwt": "^5.0",
-        "guzzlehttp/guzzle": "^6.3|^7.0",
-        "illuminate/support": "^6.0|^7.0|^8.0"
-    },
-    "require-dev": {
-        "mockery/mockery": "^1.2",
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.4|^9.0",
-        "squizlabs/php_codesniffer": "^2.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "AtlassianConnectCore\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "AtlassianConnectCore\\Tests\\": "tests/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        },
-        "laravel": {
-            "providers": [
-                "AtlassianConnectCore\\ServiceProvider"
-            ],
-            "aliases": {
-                "Descriptor": "AtlassianConnectCore\\Facades\\Descriptor",
-                "Webhook": "AtlassianConnectCore\\Facades\\Webhook"
-            }
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "laravel": {
+      "providers": [
+        "AtlassianConnectCore\\ServiceProvider"
+      ],
+      "aliases": {
+        "Descriptor": "AtlassianConnectCore\\Facades\\Descriptor",
+        "Webhook": "AtlassianConnectCore\\Facades\\Webhook"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
